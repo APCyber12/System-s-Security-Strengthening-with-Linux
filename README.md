@@ -13,6 +13,7 @@ System strengthening with Linux means making sure your Linux computer or server 
 
 ## 1. Update System Packages
 sudo apt update
+
 sudo apt upgrade -y
 
 These commands update your package lists from the repository and upgrade all installed packages to their latest versions. Security patches and updates for software packages are often released regularly, so updating ensures your system is protected against known vulnerabilities.
