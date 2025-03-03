@@ -21,6 +21,7 @@ Keeping your system up-to-date is one of the most important steps in security. O
 
 ## 2. Check System Information
 uname -a
+
 lsb_release -a
 
 uname -a provides detailed information about the system's kernel and architecture. lsb_release -a gives information about the Linux distribution, version, and codename.
@@ -28,6 +29,7 @@ Knowing your system’s details is essential when you need to troubleshoot or ap
 
 ## 3. View Active Users
 who
+
 w
 
 These commands show who is currently logged into the system. who lists logged-in users, while w provides more detailed information, including the user's activity.
@@ -53,7 +55,9 @@ Detecting failed login attempts allows you to identify potential attackers and t
 
 ## 7. Set Up a Firewall (UFW)
 sudo ufw enable
+
 sudo ufw allow ssh
+
 sudo ufw status
 
 UFW (Uncomplicated Firewall) is used to manage firewall rules. The first command enables the firewall, the second allows SSH traffic (so you can access the system remotely), and the third shows the firewall status.
@@ -61,6 +65,7 @@ A firewall helps protect the system from unauthorized access and attacks. It ens
 
 ## 8. Monitor Disk Usage
 df -h
+
 du -sh *
 
 df -h shows disk space usage for mounted filesystems, while du -sh * shows the disk usage of files and directories in the current directory.
@@ -68,6 +73,7 @@ Unusual disk space consumption can be a sign of a malware infection or other sus
 
 ## 9. Check Running Processes
 ps aux
+
 top
 
 ps aux shows all running processes, while top provides a dynamic, real-time view of active processes.
@@ -75,7 +81,9 @@ Monitoring running processes allows you to detect suspicious or unexpected activ
 
 ## 10. User Management Commands
 sudo useradd <username>
+
 sudo passwd <username>
+
 sudo userdel <username>
 
 These commands allow you to add new users, set or change their passwords, and delete users from the system.
@@ -89,6 +97,7 @@ AIDE can alert you to unauthorized changes to system files, which may be the res
 
 ## 12. View System Logs
 sudo less /var/log/syslog
+
 sudo less /var/log/auth.log
 
 These commands allow you to view system logs that contain records of system activity and authentication events.
